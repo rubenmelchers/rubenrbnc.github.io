@@ -1,300 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Venice</title>
-<meta name="description" content="">
-<meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruben's portfolio</title>
+    <meta name="author" content="Ruben Melchers" />
+    <meta name="description" content="Ruben's portfolio website" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scrolling-nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery.easing.min.js"></script>
+    <script src="script/scrolling-nav.js"></script>
+    <script src="script/jssor.slider.mini.js"></script>
+    <script src="script/main.js"></script>
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-<!-- Slider
-    ================================================== -->
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-<div id="preloader">
-  <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""> </div>
-</div>
-<!-- Navigation
-    ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="index.html">
-        <!--<i class="fa fa-flag-checkered fa-flip-horizontal"></i> -->
-        <strong>Save Venice</strong>
-      </a> </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" class="page-scroll">Home</a></li>
-        <li><a href="login.html" class="page-scroll">Login</a></li>
-        <li><a href="information.html" class="page-scroll">Information</a></li>
-        <li><a href="contact.html" class="page-scroll">Contact</a></li>
-      </ul>
+
+<!-- Navigation  -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#cover">Ruben Melchers</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="#first">WHO</a></li>
+                <li><a class="page-scroll" href="#second">PROJECTS</a></li>
+                <li><a class="page-scroll" href="#third">RESUME</a></li>
+            </ul>
+        </div>
     </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
 </nav>
 
-<!-- Header -->
-<header class="text-center" name="home">
-  <div class="intro-text">
-    <img class="wow fadeInDown" width="300px" src="img/LogoWit-01.png" alt="logo">
-    <p class="wow fadeInDown">Bringing tourists and citizens togheter for Venice!</p>
-        <div>
-        <a href="#services-section" class="btn btn-default page-scroll wow fadeInUp" data-wow-delay="200ms">Services</a>
-        <a href="#about-section" class="btn btn-default page-scroll wow fadeInUp" data-wow-delay="200ms">About</a>
-        <a href="#team-section" class="btn btn-default page-scroll wow fadeInUp" data-wow-delay="200ms">Team</a>
-        </div>
+<div class="bg-1" id="cover"></div>
+
+<!-- About me section -->
+<div class="container-fluid bg-2 text-center" id="first">
+    <h3 class="margin">Who Am I?</h3>
+    <img src="img/avatar.jpg" class="img-responsive img-circle margin" alt="Picture of me" width="350" height="350">
+
+
+    <div class="tldr">
+        <br>
+        <h3 class="aboutText">TL;DR (short version)</h3>
+        <br>
+        <p>
+            <strong>name: </strong> Ruben Melchers
+        </p>
+        <p>
+        <strong>Date of birth: </strong> 21th of June, 1994
+        </p>
+        <p>
+        <strong>Occupation: </strong>
+            <a class="tt" href="#first" data-toggle="tooltip" title="Mediatechnologie (NL) / Mediatechnology (EN). A study that teaches me how to build websites, apps and games.">Mediatechnologie</a> student
+        at Rotterdam university of applied sciences,
+            allround IT-guy at <a class="tt" target="_blank" href="http://www.studentaanhuis.nl">StudentAanHuis</a>
+        </p>
+
+        <p>
+            <strong>Development: </strong> back-end & front-end
+        </p>
+        <br>
     </div>
-</header>
+    <br>
 
-<div id="slogan-section">
-<div class="container">
-  <div class="section-title  text-center wow fadeInDown">
-    <hr>
-    <div class="clearfix"></div>
-
-    <H2>Help us rebuild the <strong>future</strong>!</H2>
-    <hr>
-<div class="clearfix"></div>
-  </div>
-</div>
-</div>
-
-
-<!-- Services Section -->
-<div id="services-section" class="text-center">
-  <div class="container">
-    <div class="section-title wow fadeInDown">
-      <h2>Our <strong>Services</strong></h2>
-      <hr>
-      <div class="clearfix"></div>
-      <p>We offer various services. We aim to fulfill your needs and wishes by guiding you through the beautiful city of Venice. Our services are granted by citizens of Venice.
-      </p>
-    </div>
-    <div class="space"></div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms"> <i class="fa fa-subway"></i>
-        <h4><strong>Transportation</strong></h4>
-        <p>We provide transportation throughout Venice. Our Save Venice sailers are local citizens, this means they know the routes by heart.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms"> <i class="fa fa-cutlery"></i>
-        <h4><strong>Food</strong></h4>
-        <p>Eat local food at one of our Save Venice providers. Taste the culture while you hear stories of the families you visit. Homemade pasta is the best pasta!</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms"> <i class="fa fa-bed"></i>
-        <h4><strong>Accomodation</strong></h4>
-        <p>Sleep in comfortable beds of your choosing!</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms"> <i class="fa fa-info"></i>
-        <h4><strong>Information</strong></h4>
-        <p>The locals know best where you should go and how to get there. They are the best source of information about Venice!</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- About Section -->
-<div id="about-section">
-  <div class="container">
-    <div class="section-title text-center wow fadeInDown">
-      <h2><strong>About</strong> us</h2>
-      <hr>
-      <div class="clearfix"></div>
-      <p>Save Venice is created for tourists. We aim to create a better image for Venice, for tourists but also for the locals.</p>
-    <p>
-      Existing media will draw outsiders into helping restoring Venice. The facilitation of the local people provides a foundation for knowledge exchange. This will give the locals more influence in the restoration of Venice, increasing population growth.
+    <div class="aboutMe">
+        <br>
+        <h3 class="aboutText">long version</h3>
+        <br>
+    <p>My name is <strong>Ruben Melchers</strong>. I was born on the 21th of June, 1994. I am a dutch
+        <a class="tt" href="#first" data-toggle="tooltip" title="Mediatechnologie (NL) / Mediatechnology (EN). A study that teaches me how to build websites, apps and games.">Mediatechnologie</a>
+        student at the Rotterdam university of applied sciences (Hogeschool Rotterdam). Currently I am in my second year of the
+        <a class="tt" href="#first" data-toggle="tooltip" title="Mediatechnologie (NL) / Mediatechnology (EN). A study that teaches me how to build websites, apps and games.">Mediatechnologie</a>
+        study, which is a 4 year course.
     </p>
+
+    <p>
+        My back-end development skills are better than my front-end development skills, but I am eager to acquire more knowledge about front-end development as this interests me more than back-end.
+    </p>
+
+    <p>
+        With my current studies, I have built up a lot of theoretical knowledge about various programming languages, such as HTML (HTML 5), CSS3, Javascript (including jQuery), C# (MVC ASP.NET, Arduino), PHP and MySQL.
+        I am also familiar with methodologies like SEO, Accessibility, user experience design, prototyping, and SCRUM.
+    </p>
+
+    <p>
+        I chose to be a developer because I like to create stuff out of nothing.
+    </p>
+
+    <p>
+        I have a job as allround IT specialist at a company called <a class="tt" target="_blank" href="http://www.studentaanhuis.nl">StudentAanHuis</a>. I visit people with computer issues and I fix them.
+    </p>
+        <br>
     </div>
+
+
+
+</div>
+
+<!-- Projects section -->
+<div class="container-fluid bg-3 text-center" id="second">
+    <h3 class="margin">Projects</h3><br>
     <div class="row">
-      <div class="col-md-6 wow fadeInLeft"> <img src="img/about.png" class="img-responsive"> </div>
-      <div class="col-md-6 wow fadeInRight">
-        <h4>Target group</h4>
-        <p>Working holidy tourists who want to help restoring venice.</p>
-        <p>Tbe citizens of Venice who will provice accomodation, food and transportation to the working holiday tourists</p>
+        <div class="col-sm-6">
+            <a target="_blank" href="http://project.cmi.hro.nl/2015_2016/mtnll_mt2d_t4/">
 
-        <h4>Opportunities</h4>
-        <ul>
-          <li>Give the control back to the citizens</li>
-          <li>Opportunities for tourists to help</li>
-          <li>Opportunites for citizens to support tourists, creating jobs</li>
-          <li>The improvements give room for green solutions</li>
-        </ul>
+            <h3>GrowIt</h3>
+            </a>
+            <p>A small, portable greenhouse that can grow fruits and vegetables on it's own. Me and my team created this with 3 arduino's and a bunch of sensors. The greenhouse knows what kind of fruit/vegetable is inside and adjusts the temperature, lighting and water supply accordingly</p>
+            <img class="projectImg" src="img/growit1.jpg" alt="Techno greenhouse that takes care of the growing process">
+        </div>
 
-        <h4>Sharing is caring</h4>
-        <p>The citizens share their knowledge of Venice with the working tourists</p>
-        <p>The working tourists share their expertise to make Venice better</p>
-        <h4>Vision</h4>
-        <p>Venice is getting a worse image by the year. This is because the city is poorly maintained, buildings are suffering from water damage and citizens are leaving the beautiful city. The city once had 120.000 citizens but it is now reduced to 60.000 citizens.</p>
-        <div class="space"></div>
-        <h4>Mission</h4>
-        <p>Our mission is to create a better environment for tourists and local citizens within Venice.</p>
-          <div class="space"></div><div class="list-style">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul>
-                  <li>Competent</li>
-                  <li>Flexible</li>
-                  <li>Eager</li>
-                  <li>Kind</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul>
-                  <li>Fast</li>
-                  <li>Informative</li>
-                  <li>Reliable</li>
-                  <li>Customer oriented</li>
-                </ul>
-              </div>
+        <div class="col-sm-6">
+            <a target="_blank" href="https://stud.hosted.hr.nl/0889496/Jaar%201/Spotify%20country-battle%20v3.0/battle.php">
+
+            <h3>Spotify country battle</h3>
+            </a>
+            <p>Choose 2 countries and let them battle with music. I used the spotify API to collect music data from all countries that support Spotify and the outcome is based on number of views/listens of the most popular track of that country.</p>
+
+            <div style="min-height: 50px;">
+                <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 980px; height: 380px; overflow: hidden;">
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 450px; overflow: hidden;">
+                        <div>
+                            <img u="image" src2="img/spotify_battle3.png">
+                        </div>
+                        <div>
+                            <img u="image" src2="img/spotify_battle.png">
+                        </div>
+                        <div>
+                            <img u="image" src2="img/spotify_battle2.png">
+                        </div>
+
+                    </div>
             </div>
-          </div>     
-      </div>
+        </div>
     </div>
-  </div>
 </div>
-<!-- Team Section -->
-<div id="team-section" class="text-center">
-  <div class="container">
-    <div class="section-title wow fadeInDown">
-      <h2>Meet the <strong>Team</strong></h2>
-      <hr>
-      <div class="clearfix"></div>      
-      <p>We are a strong and competent team existing out of 4 MT students and 4 CMD students.</p>
+
+    <div class="row">
+
+        <div class="col-sm-6">
+                <h3>Slimme Slaper / Smart Sleeper</h3>
+            <p>This was a very fun project to do. We made a bed that records the user's movement with an arduino and a bunch of sensors (accelerometer did the most important work) and it calculates the best time to wake up, it also has a speaker that plays the star wars theme song as alarm sound. The user sets an alarm and the arduino will start calculating 30 minutes before the alarm goes off. We researched deep and light sleep and sleepcycles to get the most accurate calculation.</p>
+            <img class="projectImg" src="img/smartsleeper1.jpg" alt="Arduino breadboard with wires going in and out">
+        </div>
+
+        <div class="col-sm-6">
+
+                <h3>Luna's Adventure</h3>
+
+            <p>This was the most difficult project to do because 3 out of 5 team members quit and I literally did all of the coding and I drew all the artwork. We made an educational game for 10 year old children. A picture is displayed on the right and the goal of the game is to put letters in the correct order, the letters need to form the word that corresponds with the picture. </p>
+            <img style="width: 800px;" src="img/Luna1.png" alt="Spelling game">
+        </div>
     </div>
-    <div class="col-md-12">
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="200ms">
-        <div class="thumbnail"> <img src="img/team/Lennart.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Lennart Veringmeier</h3>
-            <p>Web Developer / MT student</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="400ms">
-        <div class="thumbnail"> <img src="img/team/Ruben.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Ruben Melchers</h3>
-            <p>Web Developer / MT student / king of Westeros</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="600ms">
-        <div class="thumbnail"> <img src="img/team/Roy.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Roy Boonekamp</h3>
-            <p>Web Developer / MT student</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="800ms">
-        <div class="thumbnail"> <img src="img/team/Daney.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Daney Timmers</h3>
-            <p>Web developer / MT student</p>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-12">
-
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="800ms">
-        <div class="thumbnail"> <img src="img/team/Febe.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Febe Walhout</h3>
-            <p>Creative Concepter / CMD student</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="800ms">
-        <div class="thumbnail"> <img src="img/team/Iris.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Iris Smit</h3>
-            <p>Designer / CMD student</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="800ms">
-        <div class="thumbnail"> <img src="img/team/Andy.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Andy Houtman</h3>
-            <p>Designer / CMD student</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="800ms">
-        <div class="thumbnail"> <img src="img/team/Naomi.jpg" alt="..." class="img-circle team-img">
-          <div class="caption">
-            <h3>Naomi Laing</h3>
-            <p>Designer / CMD student</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 </div>
 
-
-<div id="footer">
-  <div class="container">
-      <p>Copyright © Developed by students of the <a href="www.hogeschoolrotterdam.nl">University of Rotterdam</a></p>
-  </div>
+<!-- Resume section -->
+<div class="container-fluid bg-2 text-center" id="third">
+    <h3 class="margin">Resume</h3>
+    <object type="application/pdf" data="pdf/Resume_Ruben-Melchers_2016.pdf" width="45%" height="90%" > </object >
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/wow.min.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/owl.carousel.js"></script> 
 
-<!-- Javascripts
-    ================================================== --> 
-<script type="text/javascript" src="js/main.js"></script>
+<!-- Footer -->
+<!--<footer class="container-fluid bg-4 text-center">-->
+<footer class="clearfix bg-4 text-center">
+    <p>Ruben Melchers, 2016</p>
+    <section>
+        <ul id='services'>
+            <li>
+                <a href="https://www.facebook.com/ruben.melchers">
+                <div class='entypo-facebook'></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://soundcloud.com/rubenrbnc">
+                <div class='entypo-soundcloud'></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/u/1/100053509941405841070/about">
+                <div class='entypo-gplus'></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ruben-melchers-1534b7a5?trk=hp-identity-name">
+                <div class='entypo-linkedin'></div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</footer>
+
+
 </body>
 </html>
